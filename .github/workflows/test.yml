@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - python311
   pull_request:
     branches:
       - master
