@@ -4,7 +4,8 @@ interpret>=0.2.7
 umap-learn>=0.5.2
 ydata-profiling>=4.3.1
 explainerdashboard>=0.3.8  # For dashboard method
-Flask==2.2.3  # https://github.com/oegedijk/explainerdashboard/issues/259
+Flask==2.2.3,<3  # https://github.com/oegedijk/explainerdashboard/issues/259
+Werkzeug<3  # https://github.com/pallets/werkzeug/issues/2789
 fairlearn==0.7.0  # For check_fairness method
 
 # Models
