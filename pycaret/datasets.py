@@ -1,5 +1,6 @@
 """Module to get datasets in pycaret
 """
+from functools import lru_cache
 from typing import Optional
 
 import requests
@@ -7,6 +8,7 @@ import requests
 from pycaret.utils._dependencies import _check_soft_dependencies
 
 
+@lru_cache(maxsize=1024)
 def get_data(
     dataset: str = "index",
     folder: Optional[str] = None,
