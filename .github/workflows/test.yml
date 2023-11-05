@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - get-data-caching
   pull_request:
     branches:
       - master
