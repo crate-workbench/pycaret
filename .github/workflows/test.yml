@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - support-311-addons
   pull_request:
     branches:
       - master
