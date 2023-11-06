@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - python311-windows
   pull_request:
     branches:
       - master
